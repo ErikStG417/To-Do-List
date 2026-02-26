@@ -129,7 +129,6 @@ li button:hover {
 @media (max-width: 480px) {
   .container {
     max-width: 95%;
-    min-height: auto;
     margin: 20px auto;
     border-radius: 16px;
     padding: 25px;
