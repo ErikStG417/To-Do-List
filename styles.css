@@ -3,6 +3,10 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #1e2f50, #3a618d);
@@ -12,12 +16,10 @@ body {
 
 .container {
   width: 100%;
-  min-height: 100vh;
   max-width: 500px;
-  margin: 0 auto;
   background: #1f2937;
   padding: 30px;
-  border-radius: 0;
+  border-radius: 16px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
@@ -127,9 +129,15 @@ li button:hover {
 
 
 @media (max-width: 480px) {
+  body {
+    display: block;
+  }
+  
+  
   .container {
-    max-width: 95%;
-    margin: 20px auto;
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 0;
     border-radius: 16px;
     padding: 25px;
   }
